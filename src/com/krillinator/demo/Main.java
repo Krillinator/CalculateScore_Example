@@ -50,6 +50,14 @@ public class Main {
             System.out.println("Player One score: " + playerOneScore);
             System.out.println("Player Two score: " + playerTwoScore);
 
+            if (playerOneScore > playerTwoScore) {
+                System.out.println("Player1 WINS");
+            } else if(playerTwoScore > playerOneScore) {
+                System.out.println("Player2 WINS");
+            } else {
+                System.out.println("DRAW");
+            }
+
             isPlaying = false;
 
         } while(isPlaying);
